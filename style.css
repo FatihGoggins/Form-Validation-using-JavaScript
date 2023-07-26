@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root,
+body,
+.container {
+	height: 100%;
+}
+
+.container,
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	border: 3px solid gray;
+	padding: 10px 20px 10px 0;
+}
+
+form > div {
+	display: flex;
+	gap: 10px;
+}
+
+label,
+input {
+	min-width: 150px;
+	font-size: 16px;
+}
+
+input {
+	border: 2px solid gray;
+}
+
+label {
+	text-align: right;
+}
+
+button {
+	min-width: 100px;
+	align-self: flex-end;
+	font-size: 16px;
+	border: 2px solid gray;
+}
+
+input:focus:empty {
+	background-color: rgba(0, 0, 128, 0.2);
+	border: 2px solid rgb(0, 0, 128);
+}
+
+input:focus:invalid {
+	background-color: rgba(128, 0, 0, 0.2);
+	border: 2px solid rgb(128, 0, 0);
+}
+
+input:focus:valid {
+	background-color: rgba(0, 128, 0, 0.2);
+	border: 2px solid rgb(0, 128, 0);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="./script.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<form action="">
+				<div class="email">
+					<label for="email">Email Address*:</label>
+					<input type="email" name="email" id="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
+				</div>
+				<div class="country">
+					<label for="country">Country*:</label>
+					<input type="text" id="country" name="country" required />
+				</div>
+				<div class="zip-code">
+					<label for="zip-code">Zip Code*:</label>
+					<input id="zip-code" name="zip-code" type="text" required />
+				</div>
+				<div class="password">
+					<label for="password">Password*:</label>
+					<input type="password" name="password" id="password" required />
+				</div>
+				<div class="password-confirm">
+					<label for="password-confirm">Confirm Password*:</label>
+					<input type="password" name="password-confirm" id="password-confirm" required />
+				</div>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</body>
+</html>
